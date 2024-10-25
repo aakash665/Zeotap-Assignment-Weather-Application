@@ -1,0 +1,130 @@
+.home-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .left {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to right, #17023e, #034390);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+  .animated-text {
+    font-size: 2rem; 
+    color: darkblue; 
+    white-space: pre-wrap; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right {
+    flex: 1;
+    display: flex;
+    background: linear-gradient(to right, #b3bc09, #a0fb82);
+    align-items: center;
+    border-radius: 15px; /* Adjust the value for more or less roundness */
+    justify-content: center;
+  }
+  
+/* Home.css */
+
+/* Home.css */
+
+/* Existing styles for the navigate button */
+.navigate-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #fcb786, #f7d0e2);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  opacity: 0; /* Start invisible */
+  transform: scale(0); /* Start from scale 0 */
+  animation: zoomIn 0.5s forwards; /* Animation effect */
+}
+
+/* Animation for the zoom-in effect */
+@keyframes zoomIn {
+  0% {
+      opacity: 0;
+      transform: scale(0);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+/* Hover effect for the button text */
+.navigate-button:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  transition: transform 0.2s ease; /* Smooth transition */
+}
+
+
+.navigate-button:active {
+    transform: scale(0.95); /* Slightly shrink on click for a pressed effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+
+
+.gradient-text {
+  font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px; /* Adjust the size as needed */
+  background: linear-gradient(90deg, #0d7fe9, #b0e743); /* Adjust colors as needed */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: font-size 0.3s ease; /* Animation on font size change */
+}
+
+.gradient-text:hover {
+  font-size: 65px; /* Size on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

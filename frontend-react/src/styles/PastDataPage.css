@@ -1,0 +1,95 @@
+.past-data-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1ab6f4;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.past-data-page h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.table-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-container select,
+.table-container input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  transition: border-color 2.3s;
+}
+
+.table-container select:focus,
+.table-container input[type="date"]:focus {
+  border-color: #ced7dd;
+  outline: none;
+}
+
+.get-weather-button {
+  background-color: #2196F3;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 15px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.get-weather-button:hover {
+  background-color: #1976D2;
+  transform: scale(1.05);
+}
+
+.past-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.past-data-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.past-data-table tr:nth-child(odd) {
+  background-color: #f0f8ff;
+}
+
+.past-data-table tr:nth-child(even) {
+  background-color: #e0f7fa;
+}
+
+.past-data-table tr:last-child {
+  background-color: #d1f4ff;
+  font-weight: bold;
+}
+
+.back-button {
+  background-color: #49a1ff;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: hsl(211, 92%, 46%);
+}

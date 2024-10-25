@@ -1,0 +1,313 @@
+.custom-alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300vw;
+  height: 300vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-alert-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.custom-alert-box h2 {
+  margin-bottom: 10px;
+}
+
+.custom-alert-box button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weather-page {
+  padding: 40px;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(to right, #8cbbf6, #b9dcf3);
+  position: relative;
+  transition: filter 0.3s ease;
+  border-radius: 30px;
+}
+
+.weather-page.blurred {
+  filter: blur(5px);
+}
+
+.loading-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 111000;
+}
+
+.loading-content {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+}
+
+.weather-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.weather-card-container .weather-card {
+  flex: 0 0 30%;
+}
+
+.settings-icon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 10px;
+  font-size: 2rem;
+  background: linear-gradient(135deg, #6a8cfc, #6b95ff);
+  color: rgb(241, 113, 113);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.settings-icon:hover {
+  background: linear-gradient(135deg, #F50057, #FF4081);
+}
+
+.back-button {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ffffff, #ffeaea);
+  color: rgb(2, 2, 2);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.vis-button {
+  position: absolute;
+  top: 30px;
+  left: 180px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ffefef, #ffffff);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.redirect-button {
+  position: absolute;
+  top: 30px;
+  left: 680px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ffefef, #ffffff);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.past-data-button {
+  position: absolute;
+  top: 30px;
+  left: 530px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ffefef, #ffffff);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.bell-button {
+  position: absolute;
+  top: 30px;
+  left: 330px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #e9e8ec, #ffffff);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.back-button:hover {
+  background: linear-gradient(135deg, #1976D2, #1E88E5);
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.dialog-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  width: 600px;
+  height: auto;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dialog-box h2 {
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.dialog-box label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.dialog-box select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: rgb(47, 250, 40);
+  color: white;
+  appearance: none;
+  padding-right: 30px;
+}
+
+.dialog-box select::after {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  pointer-events: none;
+}
+
+.dialog-box input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.dialog-box button {
+  padding: 12px 20px;
+  background-color: #b4d9f8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dialog-box button:hover {
+  background-color: #99c5f1;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dialog-buttons button {
+  flex: 1;
+  padding: 15px 25px;
+  font-size: 20px;
+  background-color: #cbe8ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dialog-buttons button:hover {
+  background-color: #d8ecff;
+}
+
+.weather-page h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  color: #282d3f;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.dialog-buttons button {
+  padding: 10px 10px;
+  cursor: pointer;
+  background-color: #c1fc62;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+.dialog-buttons button:last-child {
+  margin-right: 0;
+}
+
+.india-text {
+  display: inline-block;
+}
+
+.top {
+  color: #FF9933;
+}
+
+.middle {
+  color: #FFFFFF;
+}
+
+.bottom {
+  color: #138808;
+}
