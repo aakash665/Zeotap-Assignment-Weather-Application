@@ -1,6 +1,7 @@
 # Weather App
 
-[![Watch the video](./Weather_App_Demo.mp4)](https://youtu.be/0178ZuVVRfg)
+[![Watch the video](https://img.youtube.com/vi/0178ZuVVRfg/hqdefault.jpg
+)](https://youtu.be/0178ZuVVRfg)
 
 ## Overview
 A weather app built with a React frontend and Node.js/Express backend. This project allows users to view and analyze weather data, with visualizations using `chart.js` and `recharts` libraries. 
