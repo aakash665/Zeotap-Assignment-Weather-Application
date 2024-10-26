@@ -6,12 +6,6 @@
 ## Overview
 A weather app built with a React frontend and Node.js/Express backend. This project allows users to view and analyze weather data, with visualizations using `chart.js` and `recharts` libraries. 
 
-## Table of Contents
-- [Frontend Dependencies](#frontend-dependencies)
-- [Backend Dependencies](#backend-dependencies)
-- [Installation](#installation)
-  - [Frontend Setup](#frontend-setup)
-  - [Backend Setup](#backend-setup)
 
 ---
 
