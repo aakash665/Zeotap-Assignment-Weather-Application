@@ -81,3 +81,9 @@ A weather app built with a React frontend and Node.js/Express backend. This proj
    The Node.js server should now be running at `http://localhost:5000`.
 
 ---
+
+
+### Database Setup
+ Please execute the db_setup.sql for database and tables creation.
+
+
